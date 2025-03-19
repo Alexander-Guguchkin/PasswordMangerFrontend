@@ -1,0 +1,17 @@
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-top: 20px;
+    border: 2px solid #f1f1f1;
+    padding: 10px;
+    border-radius: 9px;
+}
+.profile:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
