@@ -24,11 +24,11 @@ const router = createBrowserRouter([
 ])
 const navlist = [
     {
-        title: "Home",
+        title: "Главная",
         url: "/"
     },
     {
-        title: "Settings",
+        title: "Настройка",
         url: "/settings"
     },
 
