@@ -1,0 +1,12 @@
+.buttonPrimary{
+    border: 2px solid #f1f1f1;
+    padding: 10px;
+    border-radius: 9px;
+    background: none;
+    color: white;
+}
+.buttonPrimary:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+    color: black;
+}

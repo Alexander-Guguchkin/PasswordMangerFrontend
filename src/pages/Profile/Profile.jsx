@@ -1,5 +1,5 @@
 import styles from './Profile.module.css'
-import ProfileInfo from "../components/ProfileInfo/Profilenfo.jsx";
+import ProfileInfo from "../../components/ProfileInfo/Profilenfo.jsx";
 export default function Profile() {
 
     return (
