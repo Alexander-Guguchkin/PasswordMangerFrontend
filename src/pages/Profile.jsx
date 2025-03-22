@@ -1,12 +1,12 @@
-import sytles from './Profile.module.css'
+import styles from './Profile.module.css'
+import ProfileInfo from "../components/ProfileInfo/Profilenfo.jsx";
 export default function Profile() {
 
     return (
-        <div className={sytles.profile}>
-            <div className={sytles.profile__info}>test</div>
-            <div className={sytles.profile__info}>test</div>
-            <div className={sytles.profile__info}>test</div>
-            <div className={sytles.profile__info}>test</div>
+        <div className={styles.profile}>
+            <ProfileInfo title="Имя пользователя" description="Тестовый пользователь"/>
+            <ProfileInfo title="Логин" description="Тестовый пользователь"/>
+            <ProfileInfo title="Пароль" description="****"/>
         </div>
     )
 }
