@@ -5,3 +5,9 @@ body{
     background-color: rgb(0, 0, 0);
     color: white;
 }
+.layout{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 0.30fr 1fr;
+
+}
