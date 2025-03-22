@@ -1,5 +1,5 @@
 import styles from "./NavBar.module.css"
-import LinkProfile from "../Profile/LinkProfile";
+import LinkProfile from "../LinkProfile/LinkProfile";
 export default function NavBar({ navlist }) {
     if (!navlist || navlist.length === 0) {
         return <p>Навигация отсутствует</p>;
