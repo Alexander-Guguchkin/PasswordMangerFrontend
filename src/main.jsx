@@ -10,6 +10,7 @@ import {
 import ErrorPage from "./components/Error/Error-page-404.jsx";
 import Profile from "./pages/Profile/Profile.jsx";
 import Settings from "./pages/Settings/Settings.jsx";
+import EditProfile from "./pages/Profile/EditProfile/EditProfile.jsx";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
     {
         path: "/profile",
         element: <Profile />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/profile/edit",
+        element: <EditProfile />,
         errorElement: <ErrorPage />
     }
 ])

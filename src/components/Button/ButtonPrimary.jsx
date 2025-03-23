@@ -1,8 +1,8 @@
 import style from './ButtonPrimary.module.css'
-export default function ButtonPrimary({text}){
+export default function ButtonPrimary({text, type}) {
     return (
         <div>
-            <button className={style.buttonPrimary}>
+            <button type={type} className={style.buttonPrimary} >
                 {text}
             </button>
         </div>
