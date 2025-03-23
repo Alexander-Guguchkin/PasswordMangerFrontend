@@ -2,6 +2,7 @@ import styles from './Profile.module.css';
 import ProfileInfo from "../../components/ProfileInfo/ProfileInfo.jsx";
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
+import ButtonPrimary from "../../components/Button/ButtonPrimary.jsx";
 
 export default function Profile() {
     const [profile, setProfile] = useState(null);
@@ -24,6 +25,10 @@ export default function Profile() {
                     <ProfileInfo title="Имя пользователя" description={profile.name || 'Не указано'} />
                     <ProfileInfo title="Логин" description={profile.email || 'Не указано'} />
                     <ProfileInfo title="Пароль" description="****" />
+                    <a href="/profile/edit">
+                        <ButtonPrimary type="button" text="Редактировать" />
+                    </a>
+
                 </>
             ) : (
                 <p>Загрузка...</p> // Показываем индикатор загрузки, пока данные не загружены
