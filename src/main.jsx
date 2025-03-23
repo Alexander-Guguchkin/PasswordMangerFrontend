@@ -8,12 +8,18 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import ErrorPage from "./components/Error/Error-page-404.jsx";
-import Profile from "./pages/Profile.jsx";
+import Profile from "./pages/Profile/Profile.jsx";
+import Settings from "./pages/Settings/Settings.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/settings",
+        element: <Settings />,
         errorElement: <ErrorPage />
     },
     {
@@ -24,11 +30,11 @@ const router = createBrowserRouter([
 ])
 const navlist = [
     {
-        title: "Home",
+        title: "Главная",
         url: "/"
     },
     {
-        title: "Settings",
+        title: "Настройка",
         url: "/settings"
     },
 
